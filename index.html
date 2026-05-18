@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Got feedback?</title>
+  <title>doperesumes</title>
   <style>
     body { 
       font-family: 'Roboto', sans-serif; 
@@ -121,7 +121,7 @@
 </head>
 <body>
   <form id="feedbackForm">
-    <h2>Yeah, go ahead!</h2>
+    <h2>Just drop your resume!</h2>
     <input type="text" id="name" placeholder="Your Name" required>
     <input type="email" id="email" placeholder="Your Email" required>
     <textarea id="message" placeholder="Your Message" required></textarea>
@@ -145,7 +145,7 @@
 
   <script>
     // REPLACE URL
-    const FEEDBACK_API_URL = 'REPLACE/prod/submit';
+    const FEEDBACK_API_URL = 'https://zw8eiy2c95.execute-api.us-east-1.amazonaws.com/stage-1/get-upload-url';
 
     document.getElementById('feedbackForm').addEventListener('submit', async (e) => {
       e.preventDefault();
